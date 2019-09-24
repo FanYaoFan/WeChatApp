@@ -1,0 +1,139 @@
+/* pages/detail/detail.wxss */
+.video_info{
+  width: 100%;
+  text-align: center
+
+}
+.video_title{
+      font-size: 28rpx;
+      text-align: center
+}
+.video_detatil{
+   display: flex;
+   margin:0 auto;
+   margin-bottom: 20rpx;
+}
+.video_author{
+     flex: 3;
+     color:darkslategrey;
+     font-size: 28rpx;
+     font-weight: bold;
+     padding-left: 30rpx;
+     margin-left: 30rpx;
+}
+.VplayCount{
+  flex: 2;
+  color:#505050;
+  font-size: 25rpx
+}
+.Vcomment{
+  flex:2;
+  color:#505050;
+  font-size: 25rpx
+}
+.Vdate{
+  flex: 3;
+  color: #505050;
+  font-size: 25rpx
+}
+.recommend{
+  margin-top: 5rpx;
+  justify-content: space-between;
+  align-content: center;
+  display: flex;
+}
+.rec-imgBox{
+  flex: 1;
+  margin-right: 8rpx;
+  margin-top: 6rpx;
+  padding: 5rpx;
+}
+.rec-img{
+ width: 400rpx;
+ border-radius: 5%;
+ height: 218rpx;
+
+}
+.rec-box{
+ flex: 1;
+ display: flex;
+ margin-top: 20rpx;
+ padding-left: 10rpx;
+ align-content: center;
+ justify-content: space-between;
+ flex-direction: column;
+}
+.rec-title{
+  padding-top: 6rpx;
+  flex : 1 ;
+  color : palevioletred;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+.rec-playComent{
+  flex : 1;
+  color : #505050;
+  font-size : 25rpx;
+  font-weight: bold;
+  display: flex;
+  padding-left: 13rpx
+}
+
+.playCount{
+  flex : 1;
+}
+.comment{
+  flex : 1;
+}
+
+/* 评论列表 */
+.comment_wrap{
+  margin-top : 10rpx;
+}
+.comment_title{
+  padding : 10rpx;
+  font-size: 28rpx;
+}
+.comment_list{
+
+}
+.comment_item{
+  display: flex;
+  padding:10rpx;
+  margin-bottom:10rpx;
+  justify-content: space-between;
+  border-bottom: 1px solid #505050;
+}
+.comment_user{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment_user image{
+  width : 54%;
+  border-radius: 63%;
+  padding: 5rpx;
+}
+.comment_info{
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.comment_detail{
+  display: flex;
+  justify-content: space-between;
+}
+.author{
+  font-size: 28jrpx;
+  color: black;
+}
+.date{
+  color: black;
+  font-size: 24rpx;
+}
+.comment_content{
+  font-size:28rpx;
+  color: black;
+}

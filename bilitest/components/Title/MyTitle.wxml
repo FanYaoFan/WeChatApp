@@ -1,0 +1,17 @@
+<!--components/Title/MyTitle.wxml-->
+<view class="header">
+<!-- logo -->
+<navigator class="logo">
+ <image class='logo_img' src='../../icons/bililogo.png'></image>
+</navigator>
+<!-- search -->
+<view class="search_icon" >
+ <image style="width: 60rpx; height: 44rpx" src='../../icons/search.png'></image>
+</view>
+<!-- login -->
+<view class='login'>
+ <image style="width: 60rpx; height: 44rpx" src='../../icons/login.png'></image>
+</view>
+<!-- download -->
+<view class='download'>下载</view>
+</view>

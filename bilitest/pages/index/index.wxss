@@ -1,0 +1,71 @@
+/**index.wxss**/
+.nav{
+  white-space: nowrap;
+  padding:5rpx 0;
+}
+.nav_item{
+  padding:20rpx 45rpx;
+  font-size:30rpx;
+  display: inline-block;
+}
+.nav_item.active{
+  border-bottom: solid 5rpx #de688b;
+}
+
+/* 轮播图区域 */
+.slides{
+  height: 300rpx;
+}
+.slides navigator{
+  width : 100%;
+  height: 100%;
+}
+.slides navigator image {
+  width : 100%;
+  height: 100%;
+}
+
+/* video缩略页 */
+.vbox{
+   padding:5rpx; 
+   margin-bottom: 5rpx; 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.vbox-item{
+   width: 48%;
+   margin: 0 auto; 
+   margin-bottom: 20rpx;
+}
+.vbox-img{
+  width: 100% ;
+  height: 220rpx;
+  border-radius: 5%;
+  position: relative;
+}
+.v-fath{
+    display: flex;
+    justify-content: space-center;
+    align-content: center;
+    font-size: 24rpx;
+    color: black;
+    text-align: center;
+  
+}
+.v-watch{
+  flex: 1;
+}
+.v-comment{
+  flex: 1;
+}
+.v-title{
+   font-size: 25rpx;
+   overflow: hidden;
+   white-space:nowrap;
+   text-overflow: ellipsis;
+   word-break: break-all;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp:2;
+}

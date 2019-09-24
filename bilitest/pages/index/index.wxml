@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="main">
+ <MyTitle></MyTitle> 
+<view class="nav_wrap" >
+<!-- Tab切换 -->
+ <scroll-view class="nav " scroll-x="true" upper-threshold="50" lower-threshold="50" 
+     scroll-top="0">
+   <view bindtap="curentIndex" data-index="{{index}}" class="nav_item {{index === curentIndex? 'active': ''}}"  wx:for="{{navList}}" wx:key="{{index}}" >
+       {{item.text}}
+   </view>    
+ </scroll-view>
+    <!-- 轮播图 -->
+  <view class="slides">
+   <swiper class="" indicator-dots="true"  autoplay="true" 
+    interval="3000" duration="1000" circular="true"
+   previous-margin="false" next-margin="0px" skip-hidden-item-layout="false">
+    <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}x">
+      <navigator>
+        <image src="{{ item.imgSrc}}"></image>
+      </navigator>
+    </swiper-item>
+   </swiper>
+  </view>
+
+<!-- 简介video -->
+<view>
+  <view class="vbox">
+     <navigator url="../detail/detail?id={{item.id}}" mode="widthFix" wx:for="{{videoList}}" wx:key ="{{index}}"  class="vbox-item">
+        <!-- 图片容器 -->
+          <image src="{{item.imgSrc}}" class="vbox-img"></image>
+             <view class="v-fath">
+                <view class="v-watch">
+                <!-- 观看图标 -->
+                <text class="iconfont icon-guankan"></text>
+                <text >{{item.playCount}}</text>
+              </view>
+                <view class="v-comment">
+                  <!-- 评论图标 -->
+                  <text class="iconfont icon-comment"></text>
+                  <text >{{item.commentCount}}</text>
+                </view>
+            </view>
+
+          <!-- 图片标题 -->
+          <view class=" v-title">
+              {{item.desc}}
+          </view>
+         
+
+     </navigator>
+  </view>
+</view>
+
+</view>
+
+
+
+
+
+</view>

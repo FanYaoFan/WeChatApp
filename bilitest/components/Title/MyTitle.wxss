@@ -1,0 +1,38 @@
+/* components/Title/MyTitle.wxss */
+.header{
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.logo{
+  flex : 7;
+}
+.logo_img{
+  width: 140rpx;
+  height: 60rpx;
+}
+.search_icon{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.login{
+  flex: 2;
+  justify-content: center;
+  align-content: center;
+}
+.download{
+  flex: 3;
+  text-align: center;
+  font-size: 30rpx;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  color: #fff;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  width: 60rpx;
+}
