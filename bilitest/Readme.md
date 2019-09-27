@@ -1,6 +1,5 @@
 # 微信小程序
 ## 概述
-![预览图]('https://github.com/FanYaoFan/WeChatApp/blob/master/bilitest/gif/bili.gif')
 
 ### 整体分为两个页面 模仿bilibili的小demo
  * 首页 `头部组件`复用 `scroll切换` `轮播图`  `视频列表`
