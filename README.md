@@ -1,5 +1,9 @@
+# 微信小程序
+## 1 项目
+## 2 微信小程序使用笔记
+
 # 项目 
- 1 仿bilibili(https://github.com/FanYaoFan/WeChatApp/tree/master/bilitest) 
+ 1 [仿bilibili](https://github.com/FanYaoFan/WeChatApp/tree/master/bilitest) 
 [预览图](https://github.com/FanYaoFan/WeChatApp/blob/master/bilitest/gif/bili.gif)
 2 电影文字 []
 
