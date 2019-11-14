@@ -5,8 +5,8 @@
 # 1项目 
  1 [仿bilibili](https://github.com/FanYaoFan/WeChatApp/tree/master/bilitest) 
 [预览图](https://github.com/FanYaoFan/WeChatApp/blob/master/bilitest/gif/bili.gif)  
-2  [电影文字](https://github.com/FanYaoFan/WeChatApp/blob/master/PastTime)
-    [预览图]
+ 2  [电影文字](https://github.com/FanYaoFan/WeChatApp/blob/master/PastTime)
+    [预览图](https://github.com/FanYaoFan/WeChatApp/blob/master/PastTime/gif/time.gif)
 
 # 微信小程序使用手册  
 ## 1 tabbar区域
