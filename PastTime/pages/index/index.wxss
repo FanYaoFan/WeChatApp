@@ -1,0 +1,30 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 130rpx;
+  margin: 80rpx;
+  border-radius: 50%;
+  background-color:red;
+}
+.authBtn{
+  margin-top: 100px;
+  margin-bottom:40px;
+  color: #fff;
+  background:#36d7b7;
+  border-radius: 5%;
+  line-height: 30px;
+  height: 30px;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+.foot{
+  margin-top:400rpx;
+}

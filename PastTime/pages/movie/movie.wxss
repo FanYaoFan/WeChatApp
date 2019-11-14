@@ -1,0 +1,43 @@
+/* pages/movies/movies.wxss */
+.M-container{
+    display: flex;
+    padding:20rpx;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: nowrap;
+}
+.M-Img{
+    width: 128rpx;
+    height: 128rpx;
+}
+.M-main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:20rpx;
+    flex-wrap: nowrap;
+}
+.M-name{
+    /* flex:2; */
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.M-date{
+    flex:1;
+    font-size:28rpx;
+    color: #666;
+    margin:8rpx ;
+}
+.M-commentBox{
+    flex: 1
+}
+.M-comment{
+    padding-right: 20rpx;
+    font-size:40rpx;
+    color: red;
+    font-weight: bold;
+}

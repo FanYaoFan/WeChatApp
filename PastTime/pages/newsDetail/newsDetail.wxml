@@ -1,0 +1,33 @@
+<!--pages/newsDetail/newsDetail.wxml-->
+<view>
+    <!-- 图片 -->
+    <view>
+        <view class="nd-container">
+            <view class="imgBox">
+                <image src="{{detailData.imgSrc}}" class="nd-mainImg" width:Fixed></image>
+                <!-- <image src="../../images/music/music-start.png" class="musicImg" width:Fixed></image> -->
+            </view>
+
+
+            <view class="nd-avatorBox">
+                <!-- <image src="../../images/avatar/2.png">avatar</image> -->
+                <view class="avatarImgBox">
+                    <image src="{{detailData.avatar}}" class="nd-avatar" width:Fixed></image>
+                </view>
+                <text class="nd-author">{{detailData.author}}</text>
+                <text class="nd-date">{{detailData.date}}</text>
+            </view>
+            <text class="nd-title">{{item.title}}</text>
+            <!-- 分界线   -->
+            <view class="nd-shareBox">
+                <image src="{{isCollected ? '../../images/icon/collection.png' : '../../images/icon/collection-anti.png'}}" class="nd-collection" catchtap="getCollection"></image>
+                <image src="../../images/icon/share-anti.png" class="nd-share" catchtap="handleShare"></image>
+            </view>
+            <!-- 文章  -->
+            <view class="nd-detailBox">
+                <text class="nd-detail">{{detailData.detail}}</text>
+            </view>
+        </view>
+    </view>
+
+</view>

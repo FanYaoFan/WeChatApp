@@ -1,0 +1,14 @@
+<view>
+  <view class="userinfo">
+   
+    <image src="{{userInfo.avatarUrl}}" class="userinfo-avatar"></image>
+    <!-- <text class="userinfo-nickname"></text> -->
+    
+    <view>
+     <text class="userinfo-nickname">hello! {{userInfo.nickName}}</text>
+    </view>
+    <button wx:if="{{!isHide && canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" type="primary">获取用户信息</button>
+   <view class="foot"><button style="background : #36d7b7" catchtap="goNews" >开启你的旅行吧!</button></view>
+  </view>
+
+</view>

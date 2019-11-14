@@ -1,0 +1,14 @@
+<!--pages/movie/movie.wxml-->
+<view >
+    <navigator  url="/pages/movieDetail/movieDetail?index={{index}}" class="M-container" wx:for="{{moviesList}}" wx:key="{{index}}">
+        <image class="M-Img"  src="{{item.images.large}}"></image>
+       <view class="M-main">
+           <text class="M-name">{{item.original_title}}</text>
+           <text class="M-date">{{item.year}}</text>
+           <text class="M-derector">{{item.directors[0].name}}</text>
+       </view>
+       <view class="M-commentBox">
+           <text  class="M-comment">{{item.rating.average}}</text>
+       </view>
+    </navigator>      
+</view>

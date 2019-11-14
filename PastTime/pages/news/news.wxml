@@ -1,0 +1,42 @@
+<!-- // 引用模板 --> 
+<!-- <import src="/pages/template/listItem.wxml" /> -->
+<!-- <import src=" " /> -->
+<!-- 阅读列表  -->
+<view>
+  <!-- 轮播图   -->
+<view>
+    <swiper class="swiperBox" indicator-dots="true" autoplay="true" interval="3000" circular="true" catchtap="clickLunbo">
+        <swiper-item wx:for="{{dataList}}" wx:key="{{index}}" class="swiperItem" >
+          <image src="{{item.imgSrc}}" class="swiperImg" width:Fixed data-index="{{index}}"></image>
+        </swiper-item>
+    </swiper>
+</view>
+   <!-- <block wx:for="{{dataList}}" wx:key="{{index}}"  >
+     <view>
+          <template  is="listItem" data="{{...item}}"/>
+     </view>
+   </block> -->
+  <!-- 文章列表 -->
+   <view class="post-container"wx:for="{{dataList}}"  wx:key="{{index}}" bindtap="goDetail" data-index="{{index}}">
+      <!-- 头像  -->
+      <view class="author">
+          <!-- <image src="/images/avatar/1.png" class="auImg"></image> -->
+           <image src="{{item.avatar}}" class="auImg"></image> 
+          <text class="auDate">{{item.date}}</text>
+      </view>
+      <!-- 主体文字  -->
+      
+      <text class="P-title">{{item.context}}</text>
+      <image class="post-image" src="{{item.imgSrc}}"></image>
+      <text class="post-content">{{item.context}}</text>
+    <!-- 评论+ 阅读 -->
+      <view class="post-like">
+          <image class="post-like-image" src="../../images/icon/chat.png" ></image>
+          <text class="post-like-font">{{item.collection}}</text>
+          <image class="post-like-image" src="../../images/icon/chat1.png"width:Fixed></image>
+          <text class="post-like-font">{{item.reading}}</text>
+      </view>
+
+  </view> 
+
+</view>
