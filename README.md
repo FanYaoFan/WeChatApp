@@ -61,7 +61,7 @@ app.json下,window下为全局样式,可自定义修改
     "enablePullDownRefresh": true
   },
 ```
-### 4.1 局部样式
+### 4.2 局部样式
 在每个页面的json下,自定义修改,每个页面的样式,局部样式权限>全局样式  
 ```JavaScript
 {
